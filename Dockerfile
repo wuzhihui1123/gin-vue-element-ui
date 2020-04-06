@@ -1,13 +1,16 @@
-FROM reg.firstshare.cn/base/fs-golang:14
+FROM golang:1.14-alpine
+
+COPY . /opt/app
 
 #front-end
+WORKDIR /opt/app/front-end
+RUN npm run build:prod
 
 
 # back-end
 ENV GOPROXY https://goproxy.cn,direct
-COPY . /opt/app
-WORKDIR /opt/app/back-end/go-gin-example
+WORKDIR /opt/app/back-end
 RUN go build .
 
-EXPOSE 8080 80
-ENTRYPOINT ["./go-gin-example"]
+EXPOSE 8080
+ENTRYPOINT ["gin-vue-element-ui"]
