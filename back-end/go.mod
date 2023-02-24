@@ -22,9 +22,7 @@ require (
 	github.com/smartystreets/assertions v0.0.0-20190116191733-b6c0e53d7304 // indirect
 	github.com/smartystreets/goconvey v0.0.0-20190731233626-505e41936337 // indirect
 	github.com/ugorji/go v1.1.5-pre // indirect
-	golang.org/x/net v0.0.0-20190611141213-3f473d35a33a // indirect
-	golang.org/x/sys v0.0.0-20190921204832-2dccfee4fd3e // indirect
-	golang.org/x/tools v0.0.0-20190611222205-d73e1c7e250b // indirect
+	golang.org/x/net v0.7.0 // indirect
 	google.golang.org/appengine v1.6.3 // indirect
 	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127 // indirect
 	gopkg.in/ini.v1 v1.47.0 // indirect
